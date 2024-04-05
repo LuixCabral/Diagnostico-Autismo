@@ -3,32 +3,24 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Three Input Fields</title>
-<style>
-  .Formulario {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
-</style>
+<link rel="stylesheet" href="estilos.css">
+<title>Tela inicial</title>
 </head>
 <body>
 
-<div class="Formulario">
   <form>
-    <label for="input1">Input 1:</label><br>
-    <input type="text" id="input1" name="input1"><br><br>
+    <label  for="input1">Input 1:</label>
+    <input class="inputNome" type="text" id="input1" name="input1">
 
-    <label for="input2">Input 2:</label><br>
-    <input type="text" id="input2" name="input2"><br><br>
+    <label class="input2" for="input2">Input 2:</label>
+    <input class="input2" type="text" id="input2" name="input2">
 
-    <label for="input3">Selecione imagem e Vídeos:</label><br>
-    <input type="file" id="input3" name="input3" accept="image/*,video/*"><br><br>
+    <label for="input3">Selecione imagem e Vídeos:</label>
+    <input type="file" id="input3" name="input3" accept="image/*,video/*">
 
-    <input type="submit" value="Submit">
+    <input type="submit" value="Enviar">
   </form>
-</div>
+  
 
 </body>
 </html>
