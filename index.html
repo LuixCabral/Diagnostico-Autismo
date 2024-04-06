@@ -8,15 +8,20 @@
 </head>
 <body>
 
-  <form>
-    <label  for="input1">Input 1:</label>
-    <input class="inputNome" type="text" id="input1" name="input1">
+  <form method="post" autocomplete="on">
+    
+    <div class="inputDiv">
+      <input class="inputStyle"  type="text" id="inomeInput" name="nomeInput" placeholder="input 1" maxlength="20">
+    </div>
 
-    <label class="input2" for="input2">Input 2:</label>
-    <input class="input2" type="text" id="input2" name="input2">
+    <div class="inputDiv">
+      <input class="inputStyle" type="text" id="input2" name="input2" placeholder="input 2">
+    </div>
 
-    <label for="input3">Selecione imagem e Vídeos:</label>
-    <input type="file" id="input3" name="input3" accept="image/*,video/*">
+    <div id="escolherFileDiv">
+      <label for="ichooseFile">Selecione imagem e Vídeos:</label>
+      <input type="file" id="iescolherFile" name="escolherFile" accept="image/*,video/*">
+    </div>
 
     <input type="submit" value="Enviar">
   </form>
